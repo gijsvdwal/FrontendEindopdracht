@@ -1,0 +1,236 @@
+body{
+	background-color: rgb(201,201,201);
+	font-size: 1.2em;
+	font-family: Helvetica, sans-serif;
+	line-height: 1.3em;
+	color: rgb(49,49,49);
+	margin: 0 auto;
+}
+
+body > header{
+	  background-color: rgb(255,204,0);
+	  padding: 0.5em;
+}
+
+body > header > p, body > header > h1, body > header > a{
+	display: none;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+section > img{
+	width: 5em;
+}
+
+nav li{
+	display: inline;
+}
+
+nav a{
+	text-decoration: none;
+	display: inline-block;
+	margin: 0.1em;
+	text-transform:uppercase;
+	background-color: rgb(197,197,197);
+	color: white;	
+	padding: 0.2em;
+	box-shadow: 1px 2px 0.5em black;
+	font-size: 1em;
+}
+
+ol > li, ul > li{
+	list-style-type: none;
+}
+
+nav a:link{
+	color:rgb(103,102,98);
+	text-decoration: none;
+}
+
+nav a:hover{
+	background-color: #000;
+	color: #fff;
+}
+
+h1 a{
+	color: black;
+}
+
+main{
+	background-color: #FAFAFA;
+	padding:0.2em;
+	margin-top: 0.5em;
+}
+
+body > footer {
+	background-color: rgb(65,65,65);
+	color: #F2F2F2;
+	padding: 0.2em;
+	margin-top: 0.5em;
+}
+
+body > footer > section > h1{
+	font-size:1.2em;
+	color: #BFBFBF;
+}
+
+blockquote{
+	font-style: italic;
+	font-family: serif;
+}
+
+header input, footer input {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 1em;
+	transition: 0.5s;
+	border-radius: 0.3em;
+}
+
+footer input{
+	margin: 0.2em;
+}
+
+article > header > h1{
+	background-color: rgb(49,49,49);
+	color: white;
+	padding: 0.2em;
+}
+
+aside{
+	background-color: #FAFAFA;
+	padding: 0.2em;
+	margin-top: 0.5em;
+}
+
+aside > h1{
+	background-color: rgb(255,204,0);
+	padding: 0.2em;
+}
+
+article > img{
+	width:100%;
+}
+
+main + section{
+	background-color: #FAFAFA;
+	padding: 0.2em;
+	margin-top: 0.5em;
+}
+
+#rechtervlak > section{
+	background-color: #FAFAFA;
+	padding: 0.2em;
+	margin-top: 0.5em;
+}
+
+/*TABLET VIEW /////////////////////////////////////////////////////////////////////////*/
+@media (min-width: 40em){
+	body{
+		max-width: 40em;
+		margin: 0 auto;
+	}
+
+	body > header > h1{
+		display:initial;
+		color: rgb(61,61,61);
+		font-size: 1.5em;
+	}
+
+	body > header{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	body > header > section {
+		order: -1;
+	}
+
+	body > header > input {
+		display: inline;
+		width: 40%;
+		box-sizing: border-box;
+		font-size: 1em;
+		transition: 0.5s;
+		margin: 0.3em ;
+		padding: 0.1em;
+		border-radius: 0.3em;
+	}
+
+	footer input{
+		width: 40%;
+	}
+}
+
+/*DESKTOP VIEW /////////////////////////////////////////////////////////////////////////*/
+@media (min-width: 75em){
+		body{
+			max-width: 80em;
+		}
+
+		#grootvlak {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+
+		main{
+			max-width: 39em;
+			max-height: 133em;
+			margin: 0 auto;
+			margin-top: 0.5em;
+			order: 0;
+		}
+
+		main + section{
+			max-width: 39em;
+			margin-top: -200em;
+			margin-left: 2.5em;
+			order: 1;
+		}
+
+		#rechtervlak{
+			max-width: 20em;
+			margin: 0 auto;
+			margin-left: 0.5em;
+			order: 0;
+		}
+
+		header input{
+			margin-left: 0.5em;
+			margin-top: 1em;
+		}
+
+		body > footer{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+
+		body > footer > *  {
+ 			width: 15em;
+ 			margin: 0 auto;
+		}
+
+		footer input {
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			font-size: 1em;
+			transition: 0.5s;
+			border-radius: 0.3em;
+		}
+
+		#rechtervlak > section > h1{
+			background-color: rgb(255,204,0);
+			padding: 0.2em;
+			color: black;
+		}
+}
